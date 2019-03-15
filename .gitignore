@@ -1,0 +1,9 @@
+.next/
+node_modules/
+.env
+!.env.default
+yarn-error.log
+.DS_Store
+.idea/
+.vscode/
+/dump.rdb

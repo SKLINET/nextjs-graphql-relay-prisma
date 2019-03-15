@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 78.75">
+    <defs>
+        <style>
+            .cls-1,.cls-5{fill:#1972ae;}.cls-2{font-size:25px;}.cls-2,.cls-4{fill:#fff;}.cls-2,.cls-5{font-family:Exo2-Bold, "Exo 2";font-weight:700;}.cls-3{letter-spacing:-0.02em;}.cls-4{fill-rule:evenodd;}.cls-5{font-size:33.51px;}.cls-6{letter-spacing:0em;}.cls-7{letter-spacing:-0.02em;}.cls-8{letter-spacing:-0.02em;}
+        </style>
+    </defs>
+    <title>Asset 1</title>
+    <g id="Layer_2">
+        <g id="Layer_1-2">
+            <rect class="cls-1" width="77" height="77" rx="4.38"/>
+            <text class="cls-2" transform="translate(23.64 71.45)">B
+                <tspan class="cls-3" x="15.92" y="0">F</tspan>
+            </text>
+            <path class="cls-4"
+                  d="M29.25,33.63h0A1.11,1.11,0,1,0,28,32.54a1.21,1.21,0,0,0,1.3,1.09Zm0,2.2c-2.15,0-3.9-1.47-3.9-3.29s1.75-3.3,3.9-3.3,3.9,1.48,3.9,3.3S31.4,35.83,29.25,35.83Zm19.5-2.2a1.11,1.11,0,1,0-1.3-1.09A1.21,1.21,0,0,0,48.75,33.63Zm0,2.2h0c-2.15,0-3.9-1.47-3.9-3.29s1.75-3.3,3.9-3.3,3.9,1.48,3.9,3.3-1.75,3.29-3.9,3.29Z"/>
+            <path class="cls-4"
+                  d="M39,10.59c13.93,0,20.4,4.72,23.4,9.11V5.1H65V38s0,11-26,11S13,38,13,38V5.1h2.6V19.7C18.6,15.31,25.07,10.59,39,10.59Zm-19.5,22c0-4.55,4.36-8.24,9.75-8.24h19.5c5.38,0,9.75,3.69,9.75,8.24s-4.36,8.23-9.75,8.23H29.25C23.87,40.77,19.5,37.08,19.5,32.54ZM15.6,5.1A1.21,1.21,0,0,0,14.3,4,1.21,1.21,0,0,0,13,5.1ZM65,5.1a1.32,1.32,0,0,0-2.6,0Z"/>
+            <text class="cls-5" transform="translate(83.16 45.21) scale(0.91 1)">B
+                <tspan class="cls-6" x="21.35" y="0">o</tspan>
+                <tspan x="40.95" y="0">t</tspan>
+                <tspan class="cls-7" x="54.72" y="0">F</tspan>
+                <tspan x="72.62" y="0">actor</tspan>
+                <tspan class="cls-8" x="156.29" y="0">y</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

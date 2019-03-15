@@ -1,0 +1,51 @@
+# source: http://localhost:4000
+# timestamp: Wed Mar 13 2019 23:04:24 GMT+0100 (Central European Standard Time)
+
+type ContentItem {
+  id: String
+  uid: String
+  type: String
+  slugs: [String]
+  content: String
+}
+
+type Heading {
+  type: String
+  text: String
+}
+
+type Mutation {
+  createUser(name: String): User
+}
+
+"""An object with an ID"""
+interface Node {
+  """The id of the object."""
+  id: ID!
+}
+
+type Page {
+  id: String
+  uid: String
+  type: String
+  slugs: [String]
+  title: [Heading]
+  menu_title: String
+  description: String
+  url: String
+  child_pages: [Page]
+  content_item: ContentItem
+}
+
+type Query {
+  allUsers: [User]!
+  pages(locale: String): [Page]!
+  contentItem(id: String, uid: String, locale: String): ContentItem
+}
+
+type User implements Node {
+  id: ID!
+  name: String!
+  email: String!
+  password: String!
+}

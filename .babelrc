@@ -1,0 +1,32 @@
+{
+  "presets":[
+    ["next/babel", {
+      "preset-env": {
+        "targets": {
+          "node": "10.14.1",
+          "browsers": "ie >= 11"
+        },
+        "modules": "commonjs"
+      }
+    }]
+  ],
+  "plugins": [
+    ["module-resolver", { "root": ["./src"] }],
+    "inline-react-svg",
+    "inline-dotenv",
+    "relay"
+  ],
+
+  "env": {
+    "development": {
+      "plugins": [
+        ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ]
+      ]
+    },
+    "production": {
+      "plugins": [
+        ["styled-components", { "ssr": true, "displayName": false, "preprocess": false } ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# import User from "../../../database/__generated__/schema.graphql"
+
+type Heading {
+  type: String
+  text: String
+}
+
+type ContentItem {
+  id: String
+  uid: String
+  type: String
+  slugs: [String]
+  content: String
+}
+
+type Page {
+  id: String
+  uid: String
+  type: String
+  slugs: [String]
+  title: [Heading]
+  menu_title: String
+  description: String
+  url: String
+  child_pages: [Page]
+  content_item: ContentItem
+}
+
+type Query {
+  allUsers: [User]!
+  pages(locale: String): [Page]!
+  contentItem(id: String, uid: String, locale: String): ContentItem
+}
+
+type Mutation {
+  createUser(name: String): User
+}

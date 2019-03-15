@@ -1,0 +1,12 @@
+{
+  "ignoreRoot": [
+    ".git",
+    "src/.next",
+    "src/pages",
+    "src/components",
+    "src/routes.js",
+    "node_modules/**/node_modules"
+  ],
+  "watch": ["src/server/api"],
+  "exec": "node -r esm -r dotenv/config src/server/api/index.js"
+}
