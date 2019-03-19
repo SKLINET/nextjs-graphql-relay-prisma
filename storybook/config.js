@@ -1,16 +1,16 @@
 import { configure } from '@storybook/react';
-import backgrounds from '@storybook/addon-backgrounds';
+import { withBackgrounds } from '@storybook/addon-backgrounds';
 import { addDecorator } from '@storybook/react';
-import '_utils/global-styles';
+import '../src/_utils/global-styles';
 
-const req = require.context('../src/components', true, /\.stories\.js$/);
+const req = require.context('../src/components', true, /\.stories\.tsx$/);
 
 function loadStories() {
     req.keys().forEach(filename => req(filename));
 }
 
 addDecorator(
-    backgrounds([
+    withBackgrounds([
         { name: 'white', value: '#FFF', default: true },
         { name: 'black', value: '#000' },
         { name: 'facebook', value: '#3b5998' },

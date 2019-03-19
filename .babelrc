@@ -1,14 +1,7 @@
 {
   "presets":[
-    ["next/babel", {
-      "preset-env": {
-        "targets": {
-          "node": "10.14.1",
-          "browsers": "ie >= 11"
-        },
-        "modules": "commonjs"
-      }
-    }]
+    "next/babel",
+    "@zeit/next-typescript/babel"
   ],
   "plugins": [
     ["module-resolver", { "root": ["./src"] }],

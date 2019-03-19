@@ -1,10 +1,11 @@
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { WebpackBundleSizeAnalyzerPlugin } = require('webpack-bundle-size-analyzer');
 const Visualizer = require('webpack-visualizer-plugin');
+const withTypescript = require('@zeit/next-typescript');
 
 const { ANALYZE } = process.env;
 
-module.exports = {
+module.exports = withTypescript({
     webpack(config, { isServer }) {
         switch (ANALYZE) {
             case 'BUNDLES':
@@ -32,4 +33,4 @@ module.exports = {
 
         return config;
     },
-};
+});
